@@ -19,6 +19,11 @@ body {
     font-size: 30px;
     font-weight: bold;
   }
+
+  .list-font-size {
+    font-size: 1.2rem;
+}
+
   
   p {
     text-align: justify;
@@ -67,7 +72,7 @@ body {
     transform: scale(0.9);
   }
   
-  img {
+  .eimg {
     width: 100%;
     max-width: 600px;
     height: auto;
