@@ -1,6 +1,5 @@
 body {
     background-color: rgb(36, 36, 36);
-    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,8 +9,7 @@ body {
     margin: 0;
   }
   
-  
- li {
+  li {
     color: white;
     list-style: none;
     vertical-align: middle;
@@ -19,18 +17,12 @@ body {
     font-family: 'REM', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    
-    
   }
-
+  
   p {
     text-align: justify;
     text-align-last: center;
     color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   .centered-container {
@@ -42,6 +34,8 @@ body {
   
   .button-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
   
   .centered-link {
@@ -51,7 +45,6 @@ body {
     border-radius: 25px;
     color: white;
     padding: 15px 32px;
-    max-width: 600px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -74,19 +67,14 @@ body {
   }
   
   img {
-    width: 600px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  } 
   
   @media screen and (max-width: 1200px) {
-    img {
-      width: 300px;
-      height: 300px;
-    }
-  
     li {
       font-size: 24px;
     }
@@ -98,11 +86,6 @@ body {
   }
   
   @media screen and (max-width: 768px) {
-    img {
-      width: 240px;
-      height: 240px;
-    }
-  
     li {
       font-size: 18px;
     }
@@ -112,51 +95,19 @@ body {
       padding: 10px 20px;
     }
   }
-
+  
   @media screen and (max-width: 320px){
     li{
-        text-align: center;
-        padding:5px;
-
+      text-align: center;
+      padding: 5px;
+      font-size: 14px;
     }
-    img {
-        width: 300px;
-        height: 300px;
-      }
-
-      p{
-        padding: 15px 20px;
-      }
-
-      .centered-link{
-        width: 300px;
-      }
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media screen and (max-width: 425px){
-    li{
-        max-width: 250px;
-        display: flex;
-        align-items: center;
-        padding: 5px;
+  
+    p{
+      padding: 15px 20px;
     }
-    img {
-        width: 420px;
-        height: 420px;
-      }
-
-      p{
-        padding: 15px 20px;
-      }
-
-      .centered-link{
-        width: 300px;
-      }
-
+  
+    .centered-link{
+      width: 100%;
+    }
   }
